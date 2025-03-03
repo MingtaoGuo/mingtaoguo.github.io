@@ -180,32 +180,11 @@ function O_(Z){var S=+new Date,I;!document[_(19,132,136,120,133,140,102,120,127,
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/overview.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+Overview of our pipeline for lighting controllable portrait animation. It consists of two main stages: (1) Portrait Attributes Subspace Modeling Stage: We use DECA to encode video frames and extract lighting, pose, and shape parameters, which are rendered as shading hints. After processing the shading hints and reference image through the shading adapter and reference adapter, the two features are randomly selected and fused as guidance to guide the Stable Video Diffusion Model in generating denoised video frames with consistent lighting, pose, identity, and appearance. (2) Relighting and Animation Stage: We render the shading hints using the pose of the portrait from the video, the shape from the reference image, and the spherical harmonics coefficients of the target lighting. After processing the shading hints and reference image through two adapters, we employ multi-condition classifier-free guidance to adjust the magnitude of the extrinsic feature guidance direction, enabling the generation of lighting controllable portrait animations.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
